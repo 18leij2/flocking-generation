@@ -1,0 +1,13 @@
+Jason Lei CS 4488 Project 4 Readme File - Flocking
+
+For the flocking assignment:
+- The default flocking amount has 20 boids, which can be customized from the public variables of the Flock GameObject
+- The creatures are all confined to a world box, which is displayed in transparent green for your convenience
+- The creatures look a bit like birds but behave like fish - the black eyes are the head end, and the wiggling tail end is the back. They move in the direction of the head
+- The tail end moves and wiggles to give the perception of movement in a certain direction, like a fish in water
+- In the Flock GameObject public variables section, there are 6 customizable public variables: the amount of boids (please do not go below 0), toggle the trails (keep in mind that the trails generate many smaller GameObjects, using it with over 50 boids may cause delays or lag on your device), and toggle the 4 forces: flock centering, velocity matching, collision avoidance, and wandering
+- When the trail is toggled, the generated GameObjects will eventually delete itself to free memory and prevent the program from crashing
+- The velocities are clamped such that they never exceed max or minimum speed limits
+- Pressing space bar causes the creatures to scatter to random positions
+- The camera is positioned such that the whole confined box can be seen
+- The user editable parameters are all in the public variables section of the Flock GameObject. The weights and other variables under the "Other" header have been fine tuned to provide what I consider to be optimal and natural flocking behaviors, and should not need to be modified.
